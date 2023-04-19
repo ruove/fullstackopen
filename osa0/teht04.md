@@ -3,9 +3,9 @@ sequenceDiagram
     participant browser
     participant server
     
-    browser->>server
+    browser->>server:
     activate server
-    server-->>browser
+    server-->>browser:
     deactivate server
 
 ```

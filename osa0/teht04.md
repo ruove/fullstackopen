@@ -3,9 +3,9 @@ sequenceDiagram
     participant browser
     participant server
     
-    browser->>server:
+    browser->>server: POST
     activate server
-    server-->>browser:
+    server-->>browser: GET
     deactivate server
 
 ```

@@ -42,24 +42,25 @@ const App = () => {
         good={good}
         neutral={neutral}
         bad={bad}
-        counter={counter}/>
-      <Average
-        sum={sum}
-        counter={counter}/>
-      <Positives 
-        good={good}
-        counter={counter}/>
+        counter={counter}
+        sum={sum} />
     </div>
   )
 }
 
-const Stats = ({ good, neutral, bad, counter }) => {
+const Stats = ({ good, neutral, bad, counter, sum }) => {
   return (
     <div>
       <p>Hyviä {good}</p>
       <p>Neutraaleita {neutral}</p>
       <p>Huonoja {bad}</p>
       <p>Kaikki {counter}</p>
+      <Average
+        sum={sum}
+        counter={counter}/>
+      <Positives 
+        good={good}
+        counter={counter}/>
     </div>
   )
 }

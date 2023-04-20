@@ -8,6 +8,7 @@ sequenceDiagram
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     server-->>browser: Notes-page reload
     browser->>server: GET main.css/main.js/data.json
+    server-->>browser: Loads JavaScript
     
     
 
